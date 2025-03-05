@@ -5,7 +5,7 @@ import Projects from "@/components/portfolio/Projects";
 
 export default function Portfolio() {
   return (
-    <main>
+    <main className="py-7 px-3">
       <Skills />
       <Experience />
       <Education />
