@@ -4,11 +4,11 @@ import Image from "next/image";
 export default function Skills() {
   const Item = ({imageUrl, name, description}: {imageUrl: string, name: string, description: string}) => {
     return (
-      <div className="bg-gray-800 border-1 border-gray-700 rounded-lg flex p-3 items-center">
+      <div className="flex px-2 items-center bg-gray-800 border-1 border-gray-700 rounded-lg ">
         <Image src={imageUrl} alt={name} width={50} height={50} className="rounded-lg object-contain h-15 w-15" />
-        <div className="flex flex-col p-2 justify-center">
-          <span className="font-bold text-lg">{name}</span>
-          <span className="opacity-80 text-sm">{description}</span>
+        <div className="p-2 justify-center">
+          <p className="font-bold">{name}</p>
+          <p className="opacity-80 text-xs">{description}</p>
         </div>
       </div>
     )
@@ -16,9 +16,12 @@ export default function Skills() {
 
   return (
     <section id="about">
-      <h1 className="font-bold text-2xl">Skills</h1>
-      <p>There&#39;s a couple of languages I&#39;ve worked with. <br />These are some of my main ones:</p>
-      <div className="grid grid-cols-4 gap-4">
+      <div className="flex items-center gap-3">
+        <h1 className="font-bold text-3xl">Skills</h1>
+        <span className="border-b-2 border-amber-50 flex-grow"></span>
+      </div>
+      <p className="my-2">I&#39;ve worked with a variety of languages and frameworks. These are some of them I focus on.<br/> You can view the rest of my skills on my resume :)</p>
+      <div className="grid md:grid-cols-4 grid-cols-2 gap-4">
         {skills.map((skill, index) => (
           <Item key={index} imageUrl={skill.imageUrl} name={skill.name} description={skill.description} />
         ))}
