@@ -18,7 +18,7 @@ export default function Skills() {
   return (
     <section id="about" className="mb-9">
       <SectionTitle title="Skills" />
-      <p className="my-2">I&#39;ve worked with a variety of languages and frameworks. These are some of them I focus on.<br/> You can view the rest of my skills on my resume :)</p>
+      <p className="my-2">I&#39;ve worked with a variety of languages and frameworks. These are some of my current technologies.</p>
       <div className="grid md:grid-cols-4 grid-cols-2 gap-4">
         {skills.map((skill, index) => (
           <Item key={index} imageUrl={skill.imageUrl} name={skill.name} description={skill.description} />
