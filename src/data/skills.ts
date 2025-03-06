@@ -4,46 +4,46 @@ interface Skill {
   description: string;
 }
 
-const skills: Skill[] = [   // TODO: Replace with proper icons/descriptions
+const skills: Skill[] = [
   {
-    imageUrl: "/placeholder.jpg",
+    imageUrl: "/skills/Python.svg",
     name: "Python",
-    description: "Known for many indents",
+    description: "Many indents",
   },
   {
-    imageUrl: "/placeholder.jpg",
+    imageUrl: "/skills/TypeScript.svg",
     name: "TypeScript",
     description: "Like JavaScript, but better",
   },
   {
-    imageUrl: "/placeholder.jpg",
+    imageUrl: "/skills/Java.svg",
     name: "Java",
     description: "Programming Language",
   },
   {
-    imageUrl: "/placeholder.jpg",
+    imageUrl: "/skills/Cobol.svg",
     name: "Cobol",
-    description: "A very old programming language",
+    description: "An older programming language",
   },
   {
-    imageUrl: "/placeholder.jpg",
-    name: "Next.js",
-    description: "JavaScript Framework",
+    imageUrl: "/skills/CSharp.svg",
+    name: "C#",
+    description: "Used with .NET",
   },
   {
-    imageUrl: "/placeholder.jpg",
-    name: "React",
-    description: "JavaScript Framework",
-  },
-  {
-    imageUrl: "/placeholder.jpg",
+    imageUrl: "/skills/MongoDB.svg",
     name: "MongoDB",
     description: "Non-SQL Database",
   },
   {
-    imageUrl: "/placeholder.jpg",
-    name: "C#",
-    description: "Programming Language",
+    imageUrl: "/skills/NextJS.svg",
+    name: "Next.js",
+    description: "JavaScript Framework",
+  },
+  {
+    imageUrl: "/skills/React.svg",
+    name: "React",
+    description: "JavaScript Framework",
   },
 ]
 
