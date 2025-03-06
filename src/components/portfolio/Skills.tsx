@@ -5,7 +5,7 @@ import SectionTitle from "@/components/portfolio/SectionTitle";
 export default function Skills() {
   const Item = ({imageUrl, name, description}: {imageUrl: string, name: string, description: string}) => {
     return (
-      <div className="flex px-2 items-center bg-gray-800 border-1 border-gray-700 rounded-lg ">
+      <div className="flex px-2 items-center dark:bg-gray-800 border-1 border-gray-700 rounded-lg ">
         <Image src={imageUrl} alt={name} width={50} height={50} className="rounded-lg object-contain h-15 w-15" />
         <div className="p-2 justify-center">
           <p className="font-bold">{name}</p>

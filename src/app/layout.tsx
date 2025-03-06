@@ -19,7 +19,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <ColorSchemeScript />
       </head>
       <body className={`antialiased`}>
-        <MantineProvider defaultColorScheme="dark">
+        <MantineProvider defaultColorScheme="auto">
           {children}
         </MantineProvider>
       </body>
