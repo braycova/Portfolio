@@ -16,7 +16,7 @@ export default function Skills() {
   }
 
   return (
-    <section id="about" className="mb-9">
+    <section id="skills" className="mb-9" aria-label="Current skills">
       <SectionTitle title="Skills" />
       <p className="my-2">I&#39;ve worked with a variety of languages and frameworks. These are some of my current technologies.</p>
       <div className="grid md:grid-cols-4 grid-cols-2 gap-4">
