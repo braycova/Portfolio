@@ -9,7 +9,7 @@ export interface Project {
 export const projects: Project[] = [
   {
     imageUrl: '/projects/Next.png',
-    projectUrl: 'https://github.com/justnoted/Portfolio',
+    projectUrl: 'https://github.com/braycova/Portfolio',
     name: "Personal Website",
     description: "The 2nd rendition of my personal website. Built with Next.js, styled with Tailwind CSS. Timeline feature by Mantine. Deployed with Vercel.",
     skillsUsed: [
@@ -20,7 +20,7 @@ export const projects: Project[] = [
   },
   {
     imageUrl: '/projects/Lucia.jpg',
-    projectUrl: 'https://github.com/justnoted/LuciaDiscord',
+    projectUrl: 'https://github.com/braycova/LuciaDiscord',
     name: "LuciaDiscord",
     description: "A discord bot experiment built with a fun interactive economy and API calls",
     skillsUsed: [
