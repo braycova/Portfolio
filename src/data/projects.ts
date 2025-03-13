@@ -1,31 +1,33 @@
 export interface Project {
   imageUrl: string;
   projectUrl: string;
+  webUrl?: string;
   name: string;
   description: string;
-  skillsUsed: string[][];
+  skills: string[][];
 }
 
 export const projects: Project[] = [
   {
-    imageUrl: '/projects/Next.png',
+    imageUrl: '/projects/Website.png',
     projectUrl: 'https://github.com/braycova/Portfolio',
+    webUrl: 'https://www.brayancovarrubias.com',
     name: "Personal Website",
-    description: "The 2nd rendition of my personal website. Built with Next.js, styled with Tailwind CSS. Timeline feature by Mantine. Deployed with Vercel.",
-    skillsUsed: [
-      ["Next.js", "bg-slate-600"],
-      ["Tailwind CSS", "bg-blue-600"],
-      ["Vercel", "bg-slate-600"],
+    description: "My 2nd (official) rendition. Built with Next.js, styled with Tailwind CSS and Mantine, deployed with Vercel.",
+    skills: [
+      ["Next.js", "black"],
+      ["Tailwind CSS", "blue"],
+      ["Vercel", "black"],
     ],
   },
   {
-    imageUrl: '/projects/Lucia.jpg',
+    imageUrl: '/projects/Lucia.png',
     projectUrl: 'https://github.com/braycova/LuciaDiscord',
     name: "LuciaDiscord",
-    description: "A discord bot experiment built with a fun interactive economy and API calls",
-    skillsUsed: [
-      ["Python", "bg-blue-600"],
-      ["Discord API", "bg-indigo-600"],
+    description: "A discord bot experiment built with a interactive game economy and fun utility commands.",
+    skills: [
+      ["Python", "blue"],
+      ["Discord API", "indigo"],
     ],
   },
 ]

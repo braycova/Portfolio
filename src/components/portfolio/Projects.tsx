@@ -1,31 +1,48 @@
-import SectionTitle from "@/components/portfolio/SectionTitle";
+"use client"
+import SectionTitle from "@/components/ui/SectionTitle";
+import {Card, Group, Badge, Button, Text, Image} from "@mantine/core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { projects, Project } from "@/data/projects";
-import Image from "next/image";
-import {faUpRightFromSquare} from "@fortawesome/free-solid-svg-icons";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 export default function Projects() {
-  const ProjectItem = ({project}: {project: Project}) => (
-    <a href={project.projectUrl} target="_blank" className="flex p-3 dark:bg-gray-800 border-1 border-gray-700 rounded-lg hover:bg-indigo-400 dark:hover:bg-indigo-900 transition">
-      <Image src={project.imageUrl} alt={project.name} width={100} height={50} className="mr-3 w-25 h-25 object-cover rounded-lg" />
-      <div className="flex flex-col gap-1">
-        <h2 className="font-bold text-xl">{project.name} <FontAwesomeIcon icon={faUpRightFromSquare} className="fa-fw font-light text-lg hover:text-xl"/></h2>
-        <p className="opacity-85 text-sm">{project.description}</p>
-        <ul className="flex gap-2 my-2">
-          {project.skillsUsed.map((skill, index) => (
-            <li key={index} className={`border-1 border-gray-700 rounded-lg px-2 text-sm flex justify-center items-center font-bold text-gray-200 ${skill[1]}`}>{skill[0]}</li>
-          ))}
-        </ul>
-      </div>
-    </a>
+
+  const Item = ({p}: {p: Project}) => (
+    <Card shadow="sm" padding="lg" radius="lg" withBorder>
+      <Card.Section>
+        <Image src={p.imageUrl} height={50} alt={p.name}/>
+      </Card.Section>
+
+      <Group mt="md" mb="xs">
+        <Text fw={700}>{p.name}</Text>
+      </Group>
+
+      <Group gap="xs" mb="md">
+        {p.skills.map((skill, index) => (
+          <Badge key={index} color={skill[1]}>{skill[0]}</Badge>
+        ))}
+      </Group>
+
+      <Text size="sm" c="dimmed">{p.description}</Text>
+
+      <Group mt="md" mb="xs">
+        <Button color="black" radius="md" component="a" href={p.projectUrl} target="_blank"
+                leftSection={<FontAwesomeIcon icon={faGithub} className="fw-fa"/>}>View GitHub</Button>
+        {p.webUrl && (
+          <Button variant="gradient" gradient={{ from: 'indigo', to: 'violet', deg: 90 }} radius="md" component="a" href={p.webUrl} target="_blank"
+                  leftSection={<FontAwesomeIcon icon={faUpRightFromSquare} className="fw-fa"/>}>Visit Website</Button>
+        )}
+      </Group>
+    </Card>
   )
 
   return (
-    <section id="projects" aria-label="Featured Projects">
-      <SectionTitle title="Featured Projects"/>
-      <div className="flex flex-col gap-3 my-3">
+    <section id="projects" className="mb-9 scroll-m-20" aria-label="Recent Projects">
+      <SectionTitle title="Recent Projects"/>
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-2 my-3">
         {projects.map((project, index) => (
-          <ProjectItem key={index} project={project}/>
+          <Item key={index} p={project}/>
         ))}
       </div>
     </section>

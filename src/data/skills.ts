@@ -21,7 +21,7 @@ const skills: Skill[] = [
     description: "Programming Language",
   },
   {
-    imageUrl: "/skills/Cobol.svg",
+    imageUrl: "/skills/Cobol.png",
     name: "Cobol",
     description: "An older programming language",
   },
