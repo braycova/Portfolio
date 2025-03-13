@@ -1,6 +1,6 @@
 import skills from "@/data/skills";
 import Image from "next/image";
-import SectionTitle from "@/components/portfolio/SectionTitle";
+import SectionTitle from "@/components/ui/SectionTitle";
 
 export default function Skills() {
   const Item = ({imageUrl, name}: {imageUrl: string, name: string}) => {

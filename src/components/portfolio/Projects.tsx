@@ -1,4 +1,4 @@
-import SectionTitle from "@/components/portfolio/SectionTitle";
+import SectionTitle from "@/components/ui/SectionTitle";
 import { projects, Project } from "@/data/projects";
 import Image from "next/image";
 import {faUpRightFromSquare} from "@fortawesome/free-solid-svg-icons";

@@ -1,5 +1,5 @@
 "use client"
-import SectionTitle from "@/components/portfolio/SectionTitle";
+import SectionTitle from "@/components/ui/SectionTitle";
 import { Timeline, Avatar } from '@mantine/core';
 import educations from "@/data/education";
 
