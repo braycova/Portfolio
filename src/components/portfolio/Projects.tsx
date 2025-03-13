@@ -21,7 +21,7 @@ export default function Projects() {
   )
 
   return (
-    <section id="projects" aria-label="Featured Projects">
+    <section id="projects" className="mb-9 scroll-m-20" aria-label="Featured Projects">
       <SectionTitle title="Featured Projects"/>
       <div className="flex flex-col gap-3 my-3">
         {projects.map((project, index) => (

@@ -26,7 +26,7 @@ export default function Experience() {
   )
 
   return (
-    <section id="experience" aria-label="Work Experience">
+    <section id="experience" className="mb-9 scroll-m-20" aria-label="Work Experience">
       <SectionTitle title="Experience" />
       <ExpTimeline />
     </section>

@@ -21,7 +21,7 @@ export default function Education() {
   )
 
   return (
-    <section id="education" aria-label="College Experience">
+    <section id="education" className="mb-9 scroll-m-20" aria-label="College Experience">
       <SectionTitle title="Education" />
       <EduTimeline />
     </section>
