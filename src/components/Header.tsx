@@ -11,7 +11,7 @@ export default function Header() {
       <h1 className="font-bold text-4xl">Brayan Covarrubias</h1>
       <p className="text-2xl">Software Developer</p>
       <p className="mt-1 text-lg"><FontAwesomeIcon icon={faLocationDot} className="fa-fw"/> {location}</p>
-      <p className="mt-2 text-gray-300">{description}</p>
+      <p className="mt-2 dark:text-gray-300">{description}</p>
 
       <nav className="mt-2 text-3xl" aria-label="Email and Social Links">
         {contacts.map((contact) => (

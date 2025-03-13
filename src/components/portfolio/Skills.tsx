@@ -5,9 +5,9 @@ import SectionTitle from "@/components/ui/SectionTitle";
 export default function Skills() {
   const Item = ({imageUrl, name}: {imageUrl: string, name: string}) => {
     return (
-      <div className="flex flex-col items-center py-4 px-2 border-1 border-gray-700 rounded-lg hover:scale-110 dark:bg-gray-800 dark:hover:bg-gray-700 transition">
+      <div className="flex flex-col items-center py-4 px-2 border-1 border-gray-700 rounded-lg hover:scale-110 bg-gray-200 hover:bg-white dark:bg-gray-800 dark:hover:bg-gray-700 transition">
         <Image src={imageUrl} alt={name} width={25} height={25} className="rounded-lg object-contain h-10 w-10" />
-        <span className="text-gray-300 text-sm mt-2">{name}</span>
+        <span className="dark:text-gray-300 text-sm mt-2">{name}</span>
       </div>
     )
   }

@@ -8,8 +8,8 @@ export default function Timeline({exp}: { exp: Experience[] }) {
       {exp.map((e, index) => (
         <Tl.Item key={index} bullet={<Avatar size={60} radius="md" src={e.logoUrl} />}>
           <h2 className="font-bold text-xl mb-1">{e.title} {e.subtitle && (<span className="font-light">&#x2022; {e.subtitle}</span>)}</h2>
-          <span className="text-sm p-1 px-3 my-2 border-1 rounded-lg border-gray-700 dark:bg-gray-800">{e.date}</span>
-          <ul className="text-sm my-2 text-gray-300">
+          <span className="text-sm p-1 px-3 my-2 border-1 rounded-lg border-gray-700 bg-gray-200 dark:bg-gray-800">{e.date}</span>
+          <ul className="text-sm my-2 dark:text-gray-300">
             {e.highlights.map((highlight, index) => (
               <li key={index} className="mr-2">&#x2022; {highlight}</li>
             ))}
