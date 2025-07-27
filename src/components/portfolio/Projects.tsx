@@ -20,7 +20,7 @@ export default function Projects() {
 
       <Group gap="xs" mb="md">
         {p.skills.map((skill, index) => (
-          <Badge key={index} color={skill[1]}>{skill[0]}</Badge>
+          <Badge key={index} color={skill.color}>{skill.name}</Badge>
         ))}
       </Group>
 
