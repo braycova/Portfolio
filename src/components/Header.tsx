@@ -7,7 +7,7 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 export default function Header() {
   return (
     <header className="flex sm:flex-row flex-col p-7 border-b-2 border-gray-700">
-      <Image src="/Profile.jpg" alt="profile image" width={200} height={200} className="rounded-full w-42 h-42 border-2 border-gray-800 hover:border-indigo-700 transition"/>
+      <Image src="/me.jpg" alt="profile image" width={200} height={200} className="rounded-full w-42 h-42 border-2 border-gray-800 hover:border-indigo-700 transition"/>
 
       <div className="flex flex-col justify-center ml-3">
         <h1 className="font-bold text-2xl">Brayan Covarrubias</h1>
