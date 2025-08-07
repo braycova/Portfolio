@@ -15,7 +15,7 @@ export default function Experience() {
             <p className="font-sm mb-1 text-slate-300">{e.companyName} • {e.location}</p>
             <span className="text-sm p-1 px-3 my-2 border-2 rounded-lg text-slate-300 border-gray-600 bg-gray-800">{e.duration}</span>
 
-            <ul className="text-sm ml-3 my-2 text-gray-300 list-disc">
+            <ul className="text-sm ml-3 my-2 list-disc">
               {e.responsibilities.map((resp, index) => (
                 <li key={index} className="mr-2 mb-1 text-gray-400">{resp}</li>
               ))}

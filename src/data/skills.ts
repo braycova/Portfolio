@@ -9,32 +9,32 @@ const skills: Skill[] = [
     name: "Python",
   },
   {
-    imageUrl: "/skills/TypeScript.svg",
-    name: "TypeScript",
-  },
-  {
     imageUrl: "/skills/Java.svg",
     name: "Java",
   },
   {
-    imageUrl: "/skills/Cobol.png",
-    name: "Cobol",
+    imageUrl: "/skills/TypeScript.svg",
+    name: "TypeScript",
   },
   {
     imageUrl: "/skills/CSharp.svg",
     name: "C#",
   },
   {
-    imageUrl: "/skills/MongoDB.svg",
-    name: "MongoDB",
-  },
-  {
-    imageUrl: "/skills/NextJS.svg",
-    name: "Next.js",
+    imageUrl: "/skills/Mainframe.svg",
+    name: "COBOL",
   },
   {
     imageUrl: "/skills/React.svg",
     name: "React",
+  },
+  {
+    imageUrl: "/skills/MongoDB.svg",
+    name: "MongoDB",
+  },
+  {
+    imageUrl: "/skills/AWS.svg",
+    name: "AWS",
   },
 ]
 

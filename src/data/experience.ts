@@ -15,7 +15,7 @@ type Education = {
   degree: string;
   location: string;
   graduationDate: string;
-  highlights: string[];
+  description: string;
 }
 
 export const experiences: Experience[] = [
@@ -24,10 +24,11 @@ export const experiences: Experience[] = [
     companyName: "Principal Financial Group",
     title: "Software Engineer Intern",
     location: "Des Moines, IA",
-    duration: "May 2025 - Present",
-    responsibilities: ["Involved on supporting one of Principal's legacy systems",
-      "Played a role on current company initiatives"],
-    skills: ["JCL", "COBOL", "Mainframe"],
+    duration: "May 2025 - August 2025",
+    responsibilities: ["Supported a critical legacy system within an agile team environment by resolving tickets and observing modernization efforts",
+      "Contributed to key company initiatives by conducting mainframe job research and implementation",
+      "Collaborated with a team of interns to design and build an application prototype during an annual CodeJam event, leveraging AI and local codebase development"],
+    skills: ["JCL", "COBOL", "Mainframe", "Agile Development"],
     color: "rgb(29, 52, 99)"
   },
 ]
@@ -39,8 +40,6 @@ export const education: Education[] = [
     degree: "Computer Software Development (AAS)",
     location: "Ottumwa, IA",
     graduationDate: "February 2025",
-    highlights: ["Graduated with emphasis in Web, Mobile, and Mainframe Development",
-      "Taught on-demand languages, best practices, and team collaboration",
-      "Participated in college-sponsored code competitions"],
+    description: "Graduated with a triple emphasis in web, mobile, and mainframe development, applying best practices, unit testing, and collaborative skills in final projects and competitive college events.",
   },
 ]
