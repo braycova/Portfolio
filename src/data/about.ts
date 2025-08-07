@@ -12,7 +12,7 @@ interface Contact {
 export const location: string = "Des Moines, IA, USA";
 export const description: string =
   "An up-and-coming software developer based in the great corn state of Iowa 🌽\n" +
-  "Currently focusing on the mainframe at Principal Financial Group.";
+  "Currently open for work :)";
 
 export const contacts: Contact[] = [
   {
