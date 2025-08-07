@@ -14,13 +14,7 @@ export default function Education() {
             <p className="font-bold text-xl text-gray-100">{e.institutionName}</p>
             <p className="font-sm mb-1 text-slate-300">{e.degree} • {e.location}</p>
             <span className="text-sm p-1 px-3 my-2 border-2 rounded-lg text-slate-300 border-gray-600 bg-gray-800">{e.graduationDate}</span>
-
-            <ul className="text-sm ml-3 my-2 text-gray-300 list-disc">
-              {e.highlights.map((highlight, index) => (
-                <li key={index} className="mr-2 mb-1 text-gray-400">{highlight}</li>
-              ))}
-            </ul>
-
+            <p className="text-sm my-2 mb-1 text-gray-400">{e.description}</p>
           </TimelineItem>
         ))}
 
