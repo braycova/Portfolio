@@ -35,11 +35,19 @@ export const experiences: Experience[] = [
 
 export const education: Education[] = [
   {
+    logoUrl: 'logos/Bellevue.png',
+    institutionName: "Bellevue University",
+    degree: "Software Development (BS)",
+    location: "Bellevue, NE",
+    graduationDate: "May 2027 💻",
+    description: "Currently building upon an established foundation with advanced coursework in agile frameworks, enterprise development, and secure coding practices.",
+  },
+  {
     logoUrl: 'logos/IndianHills.jpg',
     institutionName: "Indian Hills Community College",
     degree: "Computer Software Development (AAS)",
     location: "Ottumwa, IA",
-    graduationDate: "February 2025",
+    graduationDate: "February 2025 🎓",
     description: "Graduated with a triple emphasis in web, mobile, and mainframe development, applying best practices, unit testing, and collaborative skills in final projects and competitive college events.",
   },
 ]

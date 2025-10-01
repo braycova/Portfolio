@@ -9,7 +9,7 @@ interface Contact {
   icon: IconDefinition;
 }
 
-export const location: string = "Des Moines, IA, USA";
+export const location: string = "Ottumwa, IA, USA";
 export const description: string =
   "An up-and-coming software developer based in the great corn state of Iowa 🌽\n" +
   "Currently open for work :)";
